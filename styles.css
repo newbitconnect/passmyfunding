@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
     color: #333;
     line-height: 1.6;
@@ -16,9 +17,14 @@ body {
     margin: 0 auto;
 }
 
+/* Header */
 header {
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: #0056b3;
     padding: 20px 0;
+    z-index: 10;
 }
 
 header .logo img {
@@ -42,9 +48,13 @@ header nav ul li a {
     font-weight: bold;
 }
 
+/* Main Sections */
 .section {
     padding: 40px 0;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 h2 {
@@ -58,31 +68,57 @@ ul, ol {
 
 table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0 15px;
 }
 
 th, td {
     padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f6f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
 }
 
 button {
     background-color: #0073e6;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
+/* Call to Action */
+.cta-button {
+    display: inline-block;
+    background-color: #0073e6;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
 footer {
     background-color: #f1f1f1;
     padding: 20px 0;
@@ -99,6 +135,7 @@ footer .social-links a:hover {
     color: #0056b3;
 }
 
+/* Floating Buttons */
 .floating-buttons {
     position: fixed;
     bottom: 20px;
@@ -122,4 +159,19 @@ footer .social-links a:hover {
 
 .floating-buttons a:hover {
     opacity: 0.7;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+        display: block;
+    }
+    .container {
+        width: 90%;
+    }
+    .floating-buttons {
+        bottom: 10px;
+        right: 10px;
+    }
 }
