@@ -330,3 +330,43 @@ textarea {
     }
 }
 
+/* Estilo para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;  /* Verde característico de WhatsApp */
+    color: white;
+    padding: 15px;
+    border-radius: 50%; /* Forma redonda */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra suave para profundidad */
+    text-align: center;
+    font-size: 24px;
+    z-index: 9999;
+    transition: all 0.3s ease;  /* Transición suave para los efectos */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Verde más oscuro cuando pasa el ratón */
+    transform: scale(1.1);  /* Le da un pequeño aumento de tamaño para hacerla interactiva */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);  /* Aumenta la sombra al pasar el ratón */
+}
+
+/* Estilo del icono de WhatsApp dentro del botón */
+.whatsapp-button i {
+    font-size: 30px;  /* Hace que el icono sea un poco más grande */
+}
+
+/* Responsividad para móviles */
+@media screen and (max-width: 768px) {
+    .whatsapp-button {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px;
+    }
+
+    .whatsapp-button i {
+        font-size: 26px;
+    }
+}
+
