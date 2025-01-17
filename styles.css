@@ -319,3 +319,53 @@ textarea {
         padding: 15px;
     }
 }
+
+/* Contenedor de los campos del formulario */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Alinea las etiquetas y campos a la izquierda */
+}
+
+/* Alineación de las etiquetas */
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: left; /* Asegura que las etiquetas estén alineadas a la izquierda */
+}
+
+/* Estilo para los campos de entrada */
+input, textarea {
+    width: 100%;  /* Asegura que los campos ocupen el 100% del contenedor */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;  /* Asegura que el padding no afecte el ancho total */
+    transition: all 0.3s ease;
+}
+
+/* Estilo para los botones */
+.cta-button {
+    width: 100%;  /* Asegura que el botón de envío ocupe el 100% del contenedor */
+    display: inline-block;
+    background-color: #0073e6;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Hacer los campos de entrada más grandes en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .form-group input, .form-group textarea {
+        width: 100%;
+    }
+}
