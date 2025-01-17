@@ -239,7 +239,7 @@ footer .social-links a:hover {
     background-color: #0056b3;
 }
 
-/* Formulario de contacto */
+/* Estilos generales para el formulario */
 form {
     background-color: #ffffff;
     padding: 20px;
@@ -258,27 +258,31 @@ h2 {
 /* Contenedor de los campos del formulario */
 .form-group {
     margin-bottom: 20px;
+    text-align: left; /* Alinea las etiquetas y campos a la izquierda */
 }
 
+/* Estilo para las etiquetas */
 label {
     display: block;
     font-weight: bold;
     color: #333;
     margin-bottom: 8px;
+    text-align: left;
 }
 
 /* Estilos para los campos de entrada */
 input, textarea {
-    width: 100%;
+    width: 100%;  /* Asegura que los campos ocupen el 100% del contenedor */
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
     color: #333;
-    box-sizing: border-box;
+    box-sizing: border-box;  /* Asegura que el padding no afecte el ancho total */
     transition: all 0.3s ease;
 }
 
+/* Estilos cuando el campo está en focus */
 input:focus, textarea:focus {
     border-color: #0073e6;
     outline: none;
@@ -300,72 +304,29 @@ input:focus, textarea:focus {
     margin-top: 20px;
 }
 
+/* Efecto hover para el botón de envío */
 .cta-button:hover {
     background-color: #0056b3;
 }
 
-/* Añadir un poco de espaciado entre los campos */
+/* Añadir espaciado entre los campos */
 input[type="text"], input[type="email"], textarea {
     margin-bottom: 10px;
 }
 
+/* Establecer altura mínima para el área de texto */
 textarea {
     min-height: 150px;
 }
 
-/* Responsividad para móviles */
+/* Responsividad para dispositivos móviles */
 @media screen and (max-width: 768px) {
     form {
         padding: 15px;
     }
-}
 
-/* Contenedor de los campos del formulario */
-.form-group {
-    margin-bottom: 20px;
-    text-align: left; /* Alinea las etiquetas y campos a la izquierda */
-}
-
-/* Alineación de las etiquetas */
-label {
-    display: block;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 8px;
-    text-align: left; /* Asegura que las etiquetas estén alineadas a la izquierda */
-}
-
-/* Estilo para los campos de entrada */
-input, textarea {
-    width: 100%;  /* Asegura que los campos ocupen el 100% del contenedor */
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    color: #333;
-    box-sizing: border-box;  /* Asegura que el padding no afecte el ancho total */
-    transition: all 0.3s ease;
-}
-
-/* Estilo para los botones */
-.cta-button {
-    width: 100%;  /* Asegura que el botón de envío ocupe el 100% del contenedor */
-    display: inline-block;
-    background-color: #0073e6;
-    color: white;
-    padding: 14px 30px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-/* Hacer los campos de entrada más grandes en dispositivos móviles */
-@media screen and (max-width: 768px) {
     .form-group input, .form-group textarea {
         width: 100%;
     }
 }
+
